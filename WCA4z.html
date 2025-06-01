@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM watsonx Code Assistant for Z: Evolución y Características</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container th, .table-container td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            text-align: left;
+        }
+        .table-container th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+        }
+        .table-container tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .section-title {
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .highlight-item {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+        }
+         /* Estilos para el botón de "Volver Arriba" */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            display: none; /* Oculto por defecto */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        #scrollTopBtn:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <button id="scrollTopBtn" title="Volver arriba">&uarr;</button>
+
+    <header class="bg-blue-600 text-white p-8 shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">IBM watsonx Code Assistant for Z</h1>
+            <p class="text-xl mt-2">Evolución, Características y Capacidades de IA</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <nav class="card mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-600">Navegación Rápida</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li><a href="#evolucion-general" class="text-blue-500 hover:underline">Evolución General del Producto</a></li>
+                <li><a href="#caracteristicas-por-version" class="text-blue-500 hover:underline">Características Detalladas por Versión</a></li>
+                <li><a href="#tabla-unificada" class="text-blue-500 hover:underline">Tabla Unificada de Características</a></li>
+                <li><a href="#clasificacion-ia" class="text-blue-500 hover:underline">Clasificación de Funciones (IA Generativa vs. No Generativa)</a></li>
+                <li><a href="#puntos-destacados" class="text-blue-500 hover:underline">Puntos Destacados</a></li>
+            </ul>
+        </nav>
+
+        <section id="evolucion-general" class="card">
+            <h2 class="text-3xl font-semibold section-title text-blue-700">Evolución General del Producto</h2>
+            <p class="mb-4 text-lg leading-relaxed">
+                IBM watsonx Code Assistant for Z es una solución de IA generativa diseñada para acelerar la modernización de aplicaciones mainframe. Su objetivo principal es ayudar a las empresas a transformar sus aplicaciones COBOL heredadas, ya sea refactorizándolas para continuar en COBOL o convirtiéndolas a Java, reduciendo costos y riesgos.
+            </p>
+            <p class="text-lg leading-relaxed">
+                A lo largo de su evolución, el producto ha expandido sus capacidades para incluir más lenguajes, mejorar la experiencia del desarrollador, ofrecer nuevas funcionalidades de análisis y optimización, y proporcionar mayor flexibilidad en el despliegue. Desde sus inicios, se ha enfocado en cubrir un ciclo de vida completo para el desarrollador, incluyendo descubrimiento, análisis, refactorización y transformación de código.
+            </p>
+        </section>
+
+        <section id="caracteristicas-por-version" class="card">
+            <h2 class="text-3xl font-semibold section-title text-blue-700">Características Detalladas por Versión</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">IBM watsonx Code Assistant for Z 1.1</h3>
+                    <p class="mb-2 text-sm text-slate-600">Fecha de disponibilidad planificada: 29 de febrero de 2024</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica Nueva o Mejorada</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mejoras en la Refactorización</td>
+                                    <td>Experiencia de desarrollador y flujo de trabajo mejorados en VS Code para la refactorización.</td>
+                                </tr>
+                                <tr>
+                                    <td>Experiencia Unificada en VS Code</td>
+                                    <td>Los desarrolladores pueden trabajar en Refactorización y Transformación dentro de un único IDE (VS Code), simplificando el flujo de trabajo.</td>
+                                </tr>
+                                <tr>
+                                    <td>Visualización en Z Open Editor VS Code Extension</td>
+                                    <td>Permite a los desarrolladores visualizar la estructura de la clase Java y actualizar los nombres Java antes de la generación.</td>
+                                </tr>
+                                <tr>
+                                    <td>Validation Assistant (Nuevo)</td>
+                                    <td>Genera automáticamente pruebas para verificar la equivalencia semántica entre el código Java y el código COBOL refactorizado.</td>
+                                </tr>
+                                <tr>
+                                    <td>Correcciones</td>
+                                    <td>Correcciones de seguridad y errores.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">IBM watsonx Code Assistant for Z 2.0</h3>
+                    <p class="mb-2 text-sm text-slate-600">Fecha de disponibilidad planificada: 19 de junio de 2024</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica Nueva o Mejorada</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Code Explanation (Explicación de Código) para COBOL (Nuevo)</td>
+                                    <td>Capacidad basada en IA generativa para explicar la función de líneas seleccionadas de código COBOL en lenguaje natural (inglés). Utiliza un LLM alojado en IBM watsonx Code Assistant for Z as a Service.</td>
+                                </tr>
+                                <tr>
+                                    <td>Despliegue de Modelos On-Premises</td>
+                                    <td>Capacidad de alojar y usar modelos en las instalaciones (requiere la compra de IBM watsonx Code Assistant 1.0).</td>
+                                </tr>
+                                <tr>
+                                    <td>Nuevos Números de Parte para Trade-up</td>
+                                    <td>Para facilitar la migración desde IBM Application Discovery and Delivery Intelligence for IBM Z o IBM Application Discovery.</td>
+                                </tr>
+                                <tr>
+                                    <td>Correcciones</td>
+                                    <td>Correcciones de seguridad y errores.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                 <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">IBM watsonx Code Assistant for Z 2.1</h3>
+                    <p class="mb-2 text-sm text-slate-600">Fecha de disponibilidad planificada: 12 de agosto de 2024</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica Nueva o Mejorada</th>
+                                    <th>Plataforma Afectada</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Code Optimization Advice (Asesoramiento de Optimización de Código) para COBOL (Nuevo)</td>
+                                    <td>watsonx Code Assistant for Z</td>
+                                    <td>Realiza un análisis profundo del tiempo de ejecución en código COBOL crítico, identificando ineficiencias de rendimiento y entregando recomendaciones priorizadas y accionables a través de la interfaz de usuario de VS Code. Ahora es un componente base.</td>
+                                </tr>
+                                <tr>
+                                    <td>Extensión de Code Explanation a JCL</td>
+                                    <td>watsonx Code Assistant for Z as a Service</td>
+                                    <td>Además de COBOL, ahora se pueden generar explicaciones en lenguaje natural para código JCL.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">IBM watsonx Code Assistant for Z 2.3</h3>
+                    <p class="mb-2 text-sm text-slate-600">Fecha de disponibilidad planificada: 1 de noviembre de 2024</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica Nueva o Mejorada</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Plug-in de Eclipse para Code Explanation (COBOL y JCL)</td>
+                                    <td>Se proporciona un plug-in de Eclipse para la funcionalidad de Code Explanation, además de la extensión existente para VS Code en despliegues SaaS. Requiere una suscripción a IBM watsonx Code Assistant for Z Service (5900-B59).</td>
+                                </tr>
+                                <tr>
+                                    <td>Integración con IDEs de Eclipse</td>
+                                    <td>Soporte completo de integración con IBM Developer for z/OS (IDZ) e IBM Explorer for z/OS.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Actualización del Servicio IBM watsonx Code Assistant for Z</h3>
+                    <p class="mb-2 text-sm text-slate-600">Fecha de disponibilidad planificada: 11 de diciembre de 2024</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica Nueva o Mejorada</th>
+                                    <th>Plataforma Afectada</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Extensión de Code Explanation a Enterprise PL/I para IBM z/OS</td>
+                                    <td>IBM watsonx Code Assistant for Z Service</td>
+                                    <td>Se añade soporte para generar explicaciones en lenguaje natural de código PL/I. Requiere suscripción a IBM watsonx Code Assistant for Z (5900-B4M) y IBM watsonx Code Assistant for Z Service (5900-B59).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Actualización de Opciones de Licencia</h3>
+                    <p class="mb-2 text-sm text-slate-600">Fecha de disponibilidad planificada: 18 de marzo de 2025</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica Nueva o Mejorada</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Opciones de Licencia Enterprise</td>
+                                    <td>Nuevas licencias para despliegue on-premises que otorgan derechos a IBM watsonx Code Assistant for Z y titularidades ilimitadas de LLM para Code Explanation.</td>
+                                </tr>
+                                <tr>
+                                    <td>Adquisición Selectiva de Capacidades</td>
+                                    <td>Opción para que los clientes ordenen selectivamente Code Explanation o Code Transformation como complementos.</td>
+                                </tr>
+                                <tr>
+                                    <td>Nuevas Opciones de Licencia para Code Explanation On-Premises</td>
+                                    <td>Opciones adicionales de licencia para desplegar Code Explanation en las instalaciones.</td>
+                                </tr>
+                                 <tr>
+                                    <td>Retiro de Marketing de Partes Específicas</td>
+                                    <td>Se retiraron del mercado algunos números de parte de "IBM watsonx Code Assistant for Z Code Explanation Premium Edition". Se ofrecieron alternativas.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">IBM watsonx Code Assistant for Z 2.5 y Service</h3>
+                    <p class="mb-2 text-sm text-slate-600">Fecha de disponibilidad planificada: 30 de abril de 2025</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica Nueva o Mejorada</th>
+                                    <th>Plataforma(s) Afectada(s)</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Code Explanation: Soporte para REXX</td>
+                                    <td>watsonx Code Assistant for Z 2.5 y Service</td>
+                                    <td>Se pueden generar explicaciones en lenguaje natural para código REXX, además de COBOL, PL/I y JCL.</td>
+                                </tr>
+                                <tr>
+                                    <td>Code Explanation: Soporte de Lenguajes Naturales Adicionales</td>
+                                    <td>watsonx Code Assistant for Z 2.5 y Service</td>
+                                    <td>Además del inglés, Code Explanation ahora soporta japonés, portugués, español, alemán y francés.</td>
+                                </tr>
+                                <tr>
+                                    <td>Refactoring Assistant: Soporte para PL/I</td>
+                                    <td>watsonx Code Assistant for Z 2.5</td>
+                                    <td>Soporte expandido para incluir la refactorización automatizada de aplicaciones PL/I. (Aplica solo a watsonx Code Assistant for Z).</td>
+                                </tr>
+                                <tr>
+                                    <td>Acceso a Capacidades Avanzadas de IBM Z Open Editor (Evaluación)</td>
+                                    <td>watsonx Code Assistant for Z y Service</td>
+                                    <td>Las capacidades clave de IBM Z Open Editor están incluidas. Un conjunto de características avanzadas está disponible para un período de evaluación de 90 días.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tabla-unificada" class="card">
+            <h2 class="text-3xl font-semibold section-title text-blue-700">Tabla Unificada de Características</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Característica Principal</th>
+                            <th>Descripción Detallada (Incluyendo Evolución y Plataformas Específicas si Aplica)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Modernización de Aplicaciones Mainframe</td>
+                            <td>Solución de IA generativa para acelerar la modernización de aplicaciones mainframe, reduciendo costos y riesgos. Cubre un ciclo de vida completo para el desarrollador de aplicaciones.</td>
+                        </tr>
+                        <tr>
+                            <td>Transformación de COBOL a Java</td>
+                            <td>Convierte selectivamente código COBOL a Java utilizando IA generativa con un modelo de lenguaje grande altamente ajustado. Permite a los desarrolladores visualizar la estructura de la clase Java y actualizar los nombres Java antes de la generación (con Z Open Editor VS Code Extension, desde v1.1).</td>
+                        </tr>
+                        <tr>
+                            <td>Refactorización de Código</td>
+                            <td>Permite refactorizar elementos seleccionados de una aplicación y continuar modernizando en COBOL. <br> • <b>COBOL:</b> Identificar y exportar código a un nuevo programa COBOL. Experiencia de desarrollador y flujo de trabajo mejorados en VS Code (desde v1.1). Se puede trabajar en Refactorización y Transformación dentro de un único IDE (VS Code) (desde v1.1). Ayuda a refactorizar aplicaciones en servicios de negocio modulares. <br> • <b>PL/I:</b> Refactorización automatizada para crear servicios de negocio modulares (desde v2.5, aplicable solo a watsonx Code Assistant for Z).</td>
+                        </tr>
+                        <tr>
+                            <td>Descubrimiento y Análisis de Aplicaciones</td>
+                            <td>Ayuda a entender el panorama de la aplicación y las dependencias asociadas para aplicaciones COBOL. Permite comprender y explicar aplicaciones mainframe.</td>
+                        </tr>
+                        <tr>
+                            <td>Code Explanation (Explicación de Código)</td>
+                            <td>Capacidad basada en IA generativa que explica la función de líneas seleccionadas de código en lenguaje natural. <br> • <b>Lenguajes de Programación Soportados:</b> COBOL (desde v2.0), JCL (desde v2.1, vía watsonx Code Assistant for Z as a Service), Enterprise PL/I para IBM z/OS (desde actualización de servicio Dic 2024, vía watsonx Code Assistant for Z Service; requiere suscripción a ambos productos), y REXX (desde v2.5). <br> • <b>Formatos de Explicación (para COBOL):</b> Corta, resumida o detallada. <br> • <b>Lenguajes Naturales Soportados para Explicación (desde v2.5):</b> Inglés, japonés, portugués, español, alemán y francés. <br> • <b>Soporte IDE:</b> VS Code, plug-in de Eclipse (desde v2.3, requiere suscripción a IBM watsonx Code Assistant for Z Service). <br> • <b>Despliegue del LLM:</b> Alojado en IBM watsonx Code Assistant for Z as a Service o con opciones on-premises (con licencias Enterprise o add-on desde Marzo 2025).</td>
+                        </tr>
+                        <tr>
+                            <td>Validation Assistant (Asistente de Validación)</td>
+                            <td>Genera automáticamente pruebas para verificar que el código Java tiene equivalencia semántica con el código COBOL refactorizado (desde v1.1). Valida código transformado para equivalencia semántica.</td>
+                        </tr>
+                        <tr>
+                            <td>Code Optimization Advice (Asesoramiento de Optimización de Código)</td>
+                            <td>Para COBOL: Realiza un análisis profundo del tiempo de ejecución, identifica ineficiencias de rendimiento y entrega recomendaciones priorizadas y accionables a través de la interfaz de usuario de VS Code (desde v2.1, ahora es un componente base de watsonx Code Assistant for Z). Ayuda a mejorar el código con información priorizada sobre el rendimiento.</td>
+                        </tr>
+                        <tr>
+                            <td>Integración con Entornos de Desarrollo (IDE)</td>
+                            <td>• <b>VS Code:</b> Carga de código COBOL en un editor moderno basado en VS Code para preparar la transformación. Experiencia unificada para Refactorización y Transformación (desde v1.1). <br> • <b>Eclipse:</b> Plug-in para Code Explanation (desde v2.3), con soporte para integración con IBM Developer for z/OS (IDZ) e IBM Explorer for z/OS.</td>
+                        </tr>
+                        <tr>
+                            <td>IBM Z Open Editor</td>
+                            <td>Extensión de Visual Studio (VS) Code de nivel empresarial y sin cargo que proporciona soporte de lenguaje para z/OS. Las capacidades clave están incluidas con watsonx Code Assistant for Z y watsonx Code Assistant for Z Service. Un conjunto de características avanzadas está disponible para un período de evaluación de 90 días (la activación más allá del período de evaluación requiere la compra de IBM Developer for z/OS Enterprise Edition) (desde v2.5).</td>
+                        </tr>
+                        <tr>
+                            <td>Despliegue de Modelos de IA</td>
+                            <td>• <b>On-premises:</b> Capacidad de alojar y usar modelos en las instalaciones (desde v2.0, cuando se compra con IBM watsonx Code Assistant 1.0). Opciones de Licencia Enterprise para despliegue on-premises con titularidades LLM ilimitadas para Code Explanation (desde Marzo 2025). Opciones de licencia adicionales para desplegar Code Explanation on-premises (desde Marzo 2025). <br> • <b>Híbrido/Servicio:</b> IBM watsonx Code Assistant for Z Service (5900-B59) para capacidades como Code Explanation, o despliegue híbrido con IBM watsonx Code Assistant for Z (5900-B4M) (desde v2.5).</td>
+                        </tr>
+                        <tr>
+                            <td>Opciones de Licencia Flexibles</td>
+                            <td>Opciones de licencia Enterprise para dar soporte a clientes que modernizan aplicaciones mainframe extensas a nivel empresarial (desde Marzo 2025). Posibilidad de ordenar selectivamente Code Explanation o Code Transformation como complementos (desde Marzo 2025).</td>
+                        </tr>
+                        <tr>
+                            <td>Correcciones de Seguridad y Errores</td>
+                            <td>Incluidas en las actualizaciones de versión para mantener la robustez y seguridad del producto (ej. v1.1, v2.0).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="clasificacion-ia" class="card">
+            <h2 class="text-3xl font-semibold section-title text-blue-700">Clasificación de Funciones</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-green-600">Funciones de IA Generativa</h3>
+                    <ul class="list-disc list-inside space-y-2 text-lg">
+                        <li>Transformación de COBOL a Java</li>
+                        <li>Code Explanation (Explicación de Código)</li>
+                        <li>Validation Assistant (generación de pruebas)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-3 text-orange-600">Funciones que NO son (primariamente) de IA Generativa</h3>
+                    <p class="mb-2 text-sm text-slate-600">(Pueden ser asistidas por IA o analíticas)</p>
+                    <ul class="list-disc list-inside space-y-2 text-lg">
+                        <li>Refactorización de Código (COBOL y PL/I)</li>
+                        <li>Descubrimiento y Análisis de Aplicaciones</li>
+                        <li>Code Optimization Advice (Asesoramiento de Optimización de Código)</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="mt-6">
+                <h3 class="text-2xl font-semibold mb-3 text-slate-700">Otras Capacidades (No son funciones de IA)</h3>
+                 <p class="mb-2 text-sm text-slate-600">(Son herramientas, plataformas, o aspectos comerciales/de soporte)</p>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li>Integración con Entornos de Desarrollo (IDE) (VS Code, Eclipse)</li>
+                    <li>IBM Z Open Editor</li>
+                    <li>Despliegue de Modelos de IA (On-premises o como Servicio)</li>
+                    <li>Opciones de Licencia Flexibles</li>
+                    <li>Correcciones de Seguridad y Errores</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="puntos-destacados" class="card">
+            <h2 class="text-3xl font-semibold section-title text-blue-700">Puntos Destacados</h2>
+            <ul class="space-y-3">
+                <li class="highlight-item"><strong>Acelerador de Modernización Mainframe:</strong> Diseñado para acelerar la modernización de aplicaciones mainframe con IA generativa, reduciendo costos y riesgos.</li>
+                <li class="highlight-item"><strong>Ciclo de Vida Integral:</strong> Cubre descubrimiento, análisis, refactorización (COBOL, PL/I) y transformación (COBOL a Java).</li>
+                <li class="highlight-item"><strong>Code Explanation Avanzado:</strong> Explica código COBOL, JCL, PL/I y REXX en múltiples lenguajes naturales (inglés, japonés, portugués, español, alemán, francés).</li>
+                <li class="highlight-item"><strong>Validación Automatizada:</strong> El Validation Assistant genera pruebas para asegurar la equivalencia semántica post-transformación.</li>
+                <li class="highlight-item"><strong>Optimización de Código COBOL:</strong> Code Optimization Advice ofrece recomendaciones para mejorar el rendimiento.</li>
+                <li class="highlight-item"><strong>Flexibilidad IDE y Despliegue:</strong> Soporte para VS Code y Eclipse; opciones de despliegue on-premises y como servicio.</li>
+                <li class="highlight-item"><strong>Beneficios Clave:</strong> Aumento de productividad, reducción de brecha de habilidades, mejora de documentación y toma de decisiones informada.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 p-8 mt-12 text-center">
+        <p>&copy; <span id="currentYear"></span> Resumen de IBM watsonx Code Assistant for Z. Información consolidada para fines ilustrativos.</p>
+    </footer>
+
+    <script>
+        // Para el año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Lógica para el botón de "Volver Arriba"
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        scrollTopBtn.onclick = function() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+</body>
+</html>
