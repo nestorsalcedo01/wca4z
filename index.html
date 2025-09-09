@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución de IBM watsonx Code Assistant for Z (WCA4z)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Evolución de IBM watsonx Code Assistant for Z (WCA4z)</h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Un análisis detallado de la madurez y el valor estratégico de la suite de modernización para mainframe, proyectado hasta el Q2 de 2025.</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="space-y-16">
+
+            <!-- Section: Visión General -->
+            <section class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    WCA4z: Un Enfoque Holístico y en Evolución
+                </h2>
+                <p class="text-slate-600">
+                    WCA4z es una suite integral de herramientas impulsadas por IA, diseñada para acelerar y optimizar el ciclo de vida completo de las aplicaciones en mainframes IBM Z. Ha evolucionado de una herramienta centrada en la conversión de COBOL a Java a una plataforma multifacética que abarca la <span class="font-semibold text-blue-600">comprensión, refactorización, optimización y validación</span>. Promueve un ciclo de vida incremental y de bajo riesgo: <span class="font-semibold">Understand → Explain → Optimize → Refactor → Transform → Validate</span>.
+                </p>
+            </section>
+
+            <!-- Section: Funcionalidades Detalladas -->
+            <section>
+                <h2 class="text-3xl font-bold text-center mb-10 text-slate-800">Funcionalidades Clave</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- 1. Understand -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">1</span> Understand</h3>
+                        <p class="text-slate-600 mb-4">Obtiene una comprensión profunda de las aplicaciones mainframe existentes para crear un "plan de aplicación" (application blueprint).</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                            <li><strong>Herramientas:</strong> IBM ADDI y Z Understand on Linux (desde v2.4.20).</li>
+                            <li><strong>Capacidades:</strong> Análisis de interdependencias, visualizaciones gráficas, análisis de impacto y soporte para COBOL, PL/I, JCL, CICS, DB2, etc.</li>
+                            <li><strong>Evolución:</strong> La v2.6.0+ mejora Z Understand con soporte PL/I, ejecución en Linux on System z y una preview de UI web con IA generativa para descubrir reglas de negocio.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Explain -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">2</span> Explain</h3>
+                        <p class="text-slate-600 mb-4">Utiliza IA generativa para desmitificar y clarificar el código mainframe complejo, reduciendo la brecha de habilidades.</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                            <li><strong>Lenguajes:</strong> COBOL, PL/I, JCL, REXX y Assembler (Preview).</li>
+                            <li><strong>Funcionalidades:</strong> Explicaciones en varios niveles de detalle, inserción de comentarios y soporte multi-idioma (español, francés, etc. desde v2.5).</li>
+                            <li><strong>Integración IDE:</strong> Disponible en VS Code (con Explain Code Lens) y Eclipse/IDz.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Chat Experience -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">3</span> Chat Experience</h3>
+                        <p class="text-slate-600 mb-4">Interfaz conversacional en VS Code para interactuar con WCA4z, enriqueciendo la explicación y generación de código.</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                            <li><strong>Para Explicación:</strong> Permite preguntas de seguimiento y enriquece respuestas con datos de ADDI y CICS.</li>
+                            <li><strong>Para Generación:</strong> Ayuda a crear y refinar nuevo código COBOL o Java a partir de lenguaje natural.</li>
+                             <li><strong>Disponibilidad:</strong> El servicio agentic está disponible on-premise desde v2.7.0, incluyendo la interfaz de chat.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Refactor -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">4</span> Refactor</h3>
+                        <p class="text-slate-600 mb-4">Reestructura aplicaciones monolíticas en servicios de negocio modulares y más manejables.</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                            <li><strong>Lenguajes:</strong> COBOL y PL/I (desde v2.5).</li>
+                            <li><strong>Capacidades:</strong> "Slicing" de código para aislar lógica, sustitución de GOTO/PERFORM THRU y análisis dinámico de programas.</li>
+                             <li><strong>Evolución:</strong> La v2.5 añade generación opcional de copybooks para interfaces de servicio y mejoras en el slicing de PL/I.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 5. Optimize -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">5</span> Optimize</h3>
+                        <p class="text-slate-600 mb-4">Identifica oportunidades de optimización de rendimiento en el código COBOL para reducir el consumo de MIPS.</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                            <li><strong>Lenguajes:</strong> Enterprise COBOL V4 y V6.</li>
+                            <li><strong>Capacidades:</strong> Perfilado de aplicaciones desde VS Code, informes interactivos y recomendaciones a nivel de línea de código.</li>
+                             <li><strong>Novedad v2.5:</strong> La "Statement performance table" visualiza el consumo de CPU por sentencia, incluso dentro de COPYBOOKS.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 6. Transform -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">6</span> Transform</h3>
+                        <p class="text-slate-600 mb-4">Utiliza IA generativa para convertir código COBOL en Java idiomático y orientado a objetos, evitando el "JOBOL".</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                             <li><strong>Enfoque:</strong> Traducción sofisticada que entiende el contexto para generar código Java de calidad.</li>
+                             <li><strong>Evolución:</strong> Soporte para SQL estático con SQLJ y generación de comentarios Javadoc (v2.5), y generación guiada e incremental (v2.4.20).</li>
+                            <li><strong>Interacción z/OS:</strong> El Java generado utiliza librerías como JZOS, JCICS y el IBM Data Server Driver.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 7. Validate -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">7</span> Validate</h3>
+                        <p class="text-slate-600 mb-4">Garantiza la integridad de la modernización mediante la generación automatizada de pruebas de equivalencia.</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                            <li><strong>Herramienta:</strong> Z Validation Assistant.</li>
+                            <li><strong>Funcionalidad:</strong> Genera automáticamente pruebas JUnit para verificar que el Java produce los mismos resultados que el COBOL original.</li>
+                             <li><strong>Evolución:</strong> Automatización de la configuración COBOL para generar datos de prueba y vinculación de resultados a métodos JUnit (v2.4.10).</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 8. Generate -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center"><span class="bg-blue-100 text-blue-700 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">8</span> Generate</h3>
+                        <p class="text-slate-600 mb-4">Funciona como un asistente de codificación para el nuevo desarrollo, generando código a partir de lenguaje natural.</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 flex-grow">
+                             <li><strong>Lenguajes Soportados (Chat):</strong> COBOL, JCL, PL/I, REXX, y HLASM.</li>
+                             <li><strong>Capacidades:</strong> Genera nuevo código COBOL o Java, ofrece sugerencias en línea (code completion) y es ideal para código repetitivo (boilerplate).</li>
+                             <li><strong>Mejores Prácticas:</strong> Usar prompts específicos y detallados con referencias a archivos para dar contexto.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section: Despliegue y Requisitos -->
+             <section class="grid md:grid-cols-2 gap-8">
+                <!-- Despliegue y Licenciamiento -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Despliegue y Licenciamiento</h3>
+                    <p class="text-slate-600 mb-4"><strong>Modelos Flexibles:</strong> El licenciamiento se basa en <span class="font-semibold">Usuario Autorizado</span> y <span class="font-semibold">Unidad de Recurso (Resource Unit)</span> para medir el uso de los LLMs en tokens.</p>
+                    <p class="text-slate-600 mb-4"><strong>Opciones de Despliegue:</strong> Ofrece tanto <span class="font-semibold">SaaS (IBM Cloud)</span> como <span class="font-semibold">local (on-premises con Cloud Pak for Data)</span> para cumplir con requisitos de seguridad y soberanía de datos.</p>
+                    <p class="text-slate-600"><strong>IA Subyacente:</strong> Utiliza los modelos fundacionales <span class="font-semibold">Granite de IBM</span>, afinados específicamente para los lenguajes y casos de uso de la modernización en el entorno Z.</p>
+                </div>
+
+                <!-- Requisitos Previos -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Requisitos Previos</h3>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2">
+                        <li><span class="font-semibold">Hardware:</span> IBM Z (z14 o superior).</li>
+                        <li><span class="font-semibold">Software z/OS:</span> z/OS 2.4.0+, Enterprise COBOL 6.2+, z/OSMF.</li>
+                        <li><span class="font-semibold">Entorno Cliente:</span> VS Code (principal), Eclipse/IDz.</li>
+                        <li><span class="font-semibold">Comprensión:</span> ADDI para Z o Z Understand en Linux.</li>
+                        <li><span class="font-semibold">IA:</span> SaaS (IBM Cloud) o local (IBM Cloud Pak for Data).</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- Section: Conclusión -->
+             <section class="bg-blue-600 text-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    Conclusión: Un Catalizador para la Modernización
+                </h2>
+                <p class="text-blue-100">
+                    La evolución de WCA4z demuestra un compromiso estratégico de IBM para mejorar, optimizar y extender el valor de las inversiones en mainframe. Su enfoque, que encapsula el conocimiento experto y automatiza tareas complejas, lo posiciona como un actor fundamental para mitigar la brecha de habilidades y fomentar una nueva generación de "desarrolladores de mainframe aumentados por IA".
+                </p>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 py-6 border-t border-slate-200">
+            <p class="text-sm text-slate-500">Información generada basada en el análisis de la evolución de IBM watsonx Code Assistant for Z.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
